@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TITLE</title>
+    
+</head>
+
+<body style =" background-color: lightblue;">
+<h1>簡易計算機</h1>
+
+  <input type="number" id="n1" value="">
+
+<button type="button" onclick="document.getElementById('result').innerHTML = aFunction(parseFloat(n1.value),parseFloat(n2.value))">相加</button>
+<button type="button" onclick="document.getElementById('result').innerHTML = mFunction(parseFloat(n1.value),parseFloat(n2.value))">相減</button>
+<button type="button" onclick="document.getElementById('result').innerHTML = xFunction(parseFloat(n1.value),parseFloat(n2.value))">相乘</button>
+<button type="button" onclick="document.getElementById('result').innerHTML = sFunction(parseFloat(n1.value),parseFloat(n2.value))">相除</button>
+
+  <input type="number" id="n2" value="">
+  
+<script>
+function aFunction(a, b) {
+  return a+b;
+}
+
+function mFunction(a, b) {
+  return a-b;
+}
+
+function xFunction(a, b) {
+  return a*b;
+}
+
+function sFunction(a, b) {
+  return a/b;
+}
+
+function rFunction() {
+  document.getElementById('n1').value=""
+  document.getElementById('n2').value=""
+  }
+
+</script>
+<br>
+<button type="button" onclick="rFunction()">reset</button>
+
+
+<p id="result"></p>
+</body>
+</html>

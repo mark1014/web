@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TITLE</title>
+    
+</head>
+
+<body style =" background-color: lightblue;">
+<h1>簡易成績計算</h1>
+
+<meta charset = "utf-8">
+<script>
+  function judge(x){
+    if(x <= 100 && x >= 0){
+      if(x >= 60){document.getElementById('demo2').innerHTML= "及格很不錯";}
+      else{document.getElementById('demo2').innerHTML= "不及格請加油";}
+    }
+    else{document.getElementById('demo2').innerHTML= "over range";}
+  }
+</script>
+
+<label>input </label><input   type="text" id="input_x" value = "100">
+
+<button type="button" onclick="judge(parseInt(input_x.value))"> 評語</button> 
+
+
+<p id="demo2"></p><br>
+
+
+</body>
+</html>
